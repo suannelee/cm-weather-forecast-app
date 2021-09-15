@@ -4,7 +4,6 @@ import AppHeader from './components/AppHeader';
 import CurrentWeather from './components/CurrentWeather';
 import HourlyChart from './components/HourlyChart';
 import DailyWeather from './components/DailyWeather';
-//import { getCurrentPosition } from './utilities/getCurrentPosition';
 import { getLocation } from './utilities/getLocation';
 import { getWeather } from './utilities/getWeatherInfo';
 import { getCoords } from './utilities/getCoords';
