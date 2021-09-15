@@ -1,0 +1,56 @@
+@import '../colors';
+
+
+.tempWrapper {
+    position: relative;
+    padding-bottom: 30px;
+
+    &__temp {
+        font-size: 7em;
+        //background: rgb(148,152,224);
+        background: linear-gradient(0deg, $orchid-color 15%, $white 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // text-shadow: 3px 3px 8px $midnight-color;
+        -webkit-filter: drop-shadow(8px 8px 8px $midnight-color);
+        filter: drop-shadow(8px 8px 8px $midnight-color);
+    }
+    &__icon {
+        position: absolute;
+        right: -15%;
+        bottom: 0;
+        -webkit-filter: drop-shadow(3px 3px 8px $midnight-color);
+        filter: drop-shadow(3px 3px 8px $midnight-color);
+
+        @media (min-width: 600px) {
+            right: 10%;
+        }
+    
+        @media (min-width: 992px) {
+            right: -15%;
+        }
+    }
+}
+
+.parameters {
+	display: flex;
+	flex-direction: row; 
+    justify-content: space-around;
+    padding-top: 17px;
+    border-radius: 20px;
+    background-color: $white;
+    color: $dk-gray-color;
+
+	&__humidity {
+		width: 30%;
+	}
+
+    &__temp {
+		width: 30%;
+	}
+    
+    &__wind {
+		width: 30%;
+	}
+}
+

@@ -1,0 +1,14 @@
+@import '../colors';
+
+.inputBox {
+    width: 100%;
+    padding: 15px;
+    border:0;
+    //box-shadow:0 0 15px 4px $orchid-color;
+    border-radius: 15px;
+    margin-bottom: 25px;
+
+    &:focus {
+        outline: none;
+    }
+}
