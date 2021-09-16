@@ -1,6 +1,8 @@
+
+
 export async function getCoords(location){
     //var location = 'London';
-    const APIKEY = 'AIzaSyD5NNdEZZM2mZGCPhP7AH_GciXam0m2hd4';
+    const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
     const url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key=" + APIKEY;
     /* const response = await fetch(url);
     const weather = await response.json(); */

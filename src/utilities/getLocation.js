@@ -1,5 +1,5 @@
 export async function getLocation(pos){
-    const APIKEY = 'AIzaSyD5NNdEZZM2mZGCPhP7AH_GciXam0m2hd4';
+    const APIKEY = process.env.REACT_APP_GOOGLE_API_KEY;
     const url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + pos.latitude + "," + pos.longitude + "&key=" + APIKEY;
     /* const response = await fetch(url);
     const weather = await response.json(); */
@@ -11,7 +11,6 @@ export async function getLocation(pos){
     try {
       const response = await axios
         .get(url, { cancelToken: source.token });
-        console.log(url);
 
         const results = response.data.results;
         for(var i = 0; i < results.length; i++){
