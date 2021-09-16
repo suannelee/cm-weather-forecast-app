@@ -33,8 +33,6 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - [React](https://reactjs.org/) - JS library
 - React Wrapper for ChartJS (https://github.com/reactchartjs/react-chartjs-2)
 
