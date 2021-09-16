@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://weather-forecast-sl.netlify.app/)
+- Live Site URL: [Weather Forecast App](https://weather-forecast-sl.netlify.app/)
 
 ## My process
 
